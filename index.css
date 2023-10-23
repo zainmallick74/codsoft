@@ -18,18 +18,19 @@
 }
 
 .container{
-  width: 100%;
+  width: 1200px;
   margin: 0 auto;
+  /* left aur right ka margin equal hona chahiye */
 }
 
 .heading{
   display: flex;
  justify-content: space-between;
   /*/horizontaly space ke liye align content  */
-width: 100%;
+/* width: 100%;
 height: 100px;
 border: 0.2px solid rgb(199, 183, 183);
-background-color: rgb(240, 246, 253);
+background-color: rgb(240, 246, 253); */
 
 }
 
@@ -69,3 +70,83 @@ a{
   font-weight: bold;
   transition:2s;
 }
+
+.hero-section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  margin: 4rem auto;
+  padding: 0 1rem;
+  padding-bottom: 8rem;
+
+}
+
+.faded-text{
+  user-select: none;
+  /* ab isse user is text ko select nhi kr payega */
+  font-size: 7em ;
+  color: rgb(231, 231, 231);
+
+  bottom: -16%;
+  left: -5%;
+  font-weight: bold;
+
+}
+
+.hero-section-left{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.hero-section-heading{
+  font-size:  35px ;
+  font-weight: 500;
+  color: #667066;
+}
+
+.hero-section-subheading{
+  font-size: 45px;
+  line-height: 45px;
+}
+
+.hero-section-description{
+  margin-top: 1rem;
+  width: 70%;
+  font-weight: 500;
+}
+
+.pink-button{
+
+ 
+   background-color: #e71f2f;
+   padding: 0.8rem 2.3rem;
+   color: azure;
+   font-size: 18px;
+   box-shadow:5px 5px 7px 0px #0000003f ;
+   position: relative;
+   z-index: 1;
+  
+  }
+  
+  
+  .pink-button::before{
+    content: "";
+    background-color: #1f1f1f;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: 0.8s;
+    z-index: -1;
+  }
+  
+  .pink-button:hover::before{
+    transform:scaleX(1) ;
+   
+  }
