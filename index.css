@@ -204,4 +204,106 @@ a{
     gap: 10px;
   }
 
+  .project-section{
+    background-color: rgb(231 231 231 );
+    margin-top: 4rem;
+
+  }
+.page-header{
+
+  font-size: 90px;
+  text-align: center;
+  padding: 30px;
+  color: #af1623;
+}
+
+.project-container{
+max-width: 1200px;
+margin: 0 auto;
+padding: 3rem 0;
+
+}
+
+.project-card{
+
+  width: 90%;
+  align-items: center;
+  height: 550px;
+  background-image: url(Education-hub-\ pic.webp);
+  background-size: cover;
+  position: relative;
+  box-shadow: 0px 0px 40px #1f1f1f;
+}
+
+.project-card::after{
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #1f1f1f9a;
+  z-index: 0;
+}
+
+
+.project-card::before{
+  content: "";
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  position: absolute;
+  transform: scaleX(0);
+  background: linear-gradient(45deg, #343d68, #343d68be, #343d687c);
+  transform-origin:left ;
+  transition: all 0.4s;
+  z-index: 1;
  
+}
+.project-card:hover::before{
+  transform: scale(1);
+}
+
+.project-number{
+  font-size: 200px;
+  position: absolute;
+  color: white;
+  z-index: 3;
+
+}
+
+.project-content{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  padding: 2em;
+  bottom: 10%;
+  z-index: 15;
+  gap: 1em;
+  transition: all 0.4s;
+  left: 10%;
+
+}
+
+.project-subheading{
+  width: 60%;
+  font-size: 16px;
+  font-style: italic;
+}
+.project-skill-container{
+  width: 60%;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.project-skill{
+  width: 40px;
+}
+.project-heading{
+  font-size: 50px;
+  font-weight: bold;
+  line-height:3rem;
+}
