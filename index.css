@@ -307,3 +307,12 @@ padding: 3rem 0;
   font-weight: bold;
   line-height:3rem;
 }
+
+.project-card:hover .project-content{
+  transform: scale(1.1);
+}
+
+.skill-container{
+  display: flex;
+
+}
