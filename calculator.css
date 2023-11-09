@@ -11,7 +11,7 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgb(44, 32, 32);
+  background-color: rgb(58, 55, 55);
 
 }
 
@@ -19,4 +19,42 @@ body{
   border: 1px solid #717171;
   padding: 20px;
   border-radius: 16px;
+  box-shadow: 0px 3px 15px rgba(113, 115, 119, 0.5);
+}
+
+input{
+
+  width: 320px;
+  border: none;
+  padding: 24px;
+  margin: 10px;
+  background:transparent ;
+  font-size: 40px;
+  text-align: right;
+  cursor: pointer;
+}
+
+input::placeholder{
+  color: white;
+}
+
+button{
+  border: none;
+  width: 60px;
+  height: 60px;
+  margin: 10px;
+  border-radius: 50%;
+  color: white;
+  background: transparent;
+  font-size: 20px;
+  cursor: pointer;
+
+}
+
+.eqlbtn{
+  background-color: rgb(136, 96, 21);
+}
+
+.operator{
+  color: green;
 }
